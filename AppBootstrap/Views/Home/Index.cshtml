@@ -1,0 +1,132 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/Styles.css" rel="stylesheet" />
+    <link href="~/css/Footer.css" rel="stylesheet" />
+</head>
+<body>
+    @* container-fluid - растягивает хидер на всю ширину экрана *@
+    <div class="container-fluid">
+        <div class="row">
+            @* меню хидера *@
+            @* nav - помещает навигацию сайта и отдельные ссылки *@
+            <div role="navigation" class="navbar navbar navbar-inverse">
+                @* элементы меню *@
+                <div class="container">
+                    @* реализация бургера при маленьком экране *@
+                    <div class="navbar-header header">
+                        @* логотип и слоган *@
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    @* логотип *@
+                                    <h1> <a href="#"> КиноМонстр </a> </h1>
+                                    @* слоган *@
+                                    <p> Кино - наша страсть! </p>
+                                </div>
+                            </div>
+                        </div>
+                        @* data-target="#navbarCollapse" - при нажатии на кнопку мы будем отображать блок с id = navbarCollapse, т.е наше меню *@
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only"> Toogle navigation </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                    </div>
+                    @* navbar-right - прижимает навигаию к правому краю *@
+                    @* здесь id="navbarCollapse" нужен для того, чтобы на мобильных устройствах появился бургер с вертикальным меню *@
+                    <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                        @* список меню *@
+                        @* class="active" - означает активную вкладку меню, которая изначально подсвечивается *@
+                        <ul class="nav nav-pills">
+                            <li class="active"> <a href="#"> Главная </a> </li>
+                            <li> <a href="#"> Фильмы </a> </li>
+                            <li> <a href="#"> Сериалы </a> </li>
+                            <li> <a href="#"> Рейтинг фильмов </a> </li>
+                            <li> <a href="#"> Контакты </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* контент *@
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                @* правый блок контента *@
+                @* col-lg-push-3 - меняем блоки местами *@
+                <div class="col-lg-9 col-lg-push-3">
+                    <h2> Новые фильмы </h2>
+                    <hr />
+                    <div class="row">
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/inter.png" alt="интерстеллар" />
+                            <div class="film_label"> Интерстеллар </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/matrix.png" alt="Матрица" />
+                            <div class="film_label"> Матрица </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/cloud.png" alt="Облачный атлас" />
+                            <div class="film_label"> Облачный атлас </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/max.png" alt="Безумный Макс" />
+                            <div class="film_label"> Безумный Макс </div>
+                        </div>
+                    </div>
+                    @* блок с отступом между строками *@
+                    <div class="margin-8">  </div>
+                    <h2> Новые сериалы </h2>
+                    <hr />
+                    <div class="row">
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/xfiles.png" alt="Секретные материалы" />
+                            <div class="film_label"> Секретные материалы </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/silicon.png" alt="Кремнивая долина"/>
+                            <div class="film_label"> Кремнивая долина </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/dead.png" alt="Ходячие мертвецы" />
+                            <div class="film_label"> Ходячие мертвецы </div>
+                        </div>
+                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <img src="~/images/breakingbad.png" alt="Во все тяжкие" />
+                            <div class="film_label"> Во все тяжкие </div>
+                        </div>
+                    </div>
+                    <a href="#"> <h3> Как снимали Интерстеллар </h3> </a>
+                </div>
+                @* левый блок контента *@
+                @* col-lg-pull-9 - меняем блоки местами *@ 
+                <div class="col-lg-3 col-lg-pull-9">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+
+        </div>
+    </div>
+    @* футер *@
+    <footer>
+        <div class="container">
+            <p class="text-center">
+                <a href="http://ru.wh-db.com"> WH-DB.COM </a>
+            </p>
+        </div>
+    </footer>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

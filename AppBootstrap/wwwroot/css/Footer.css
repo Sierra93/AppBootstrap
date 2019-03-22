@@ -1,0 +1,22 @@
+﻿html, body {
+    height: 100%;
+}
+/*стили для контента*/
+.wrapper {
+    min-height: 100%; /*для прижатия футера к низу*/
+}
+/*стили для футера*/
+footer {
+    color: #666;
+    background-color: #222;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid black;
+}
+/*стили ссылок футера*/
+footer a {
+    color: #999;
+}
+/*стили при наведении на ссылки футера*/
+footer a:hover {
+    color: #efefef;
+}

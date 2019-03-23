@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Главная</title>
+    <title>Контакты</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/Styles.css" rel="stylesheet" />
@@ -45,11 +45,11 @@
                         @* список меню *@
                         @* class="active" - означает активную вкладку меню, которая изначально подсвечивается *@
                         <ul class="nav nav-pills">
-                            <li class="active"> @Html.ActionLink("Главная", "mainPage", "Home") </li>
+                            <li> @Html.ActionLink("Главная", "mainPage", "Home") </li>
                             <li> @Html.ActionLink("Фильмы", "filmsShow", "Home") </li>
                             <li> <a href="#"> Сериалы </a> </li>
                             <li> <a href="#"> Рейтинг фильмов </a> </li>
-                            <li> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
+                            <li class="active"> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
                         </ul>
                     </div>
                 </div>
@@ -63,69 +63,22 @@
                 @* правый блок контента *@
                 @* col-lg-push-3 - меняем блоки местами *@
                 <div class="col-lg-9 col-lg-push-3">
-                    <form role="search" class="visible-xs">
+                    <h2> Контакты </h2>
+                    <p> Отправьте ваш отзыв о портале КиноМонстр </p>
+                    <form>
                         <div class="form-group">
-                            <div class="input-group">
-                                <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
-                            </div>
+                            @* input-lg - делает инпут большим *@
+                            <input type="text" placeholder="Ваше имя" class="form-control input-lg" />
                         </div>
+                        <div class="form-group">
+                            @* input-lg - делает инпут большим *@
+                            <input type="text" placeholder="Ваш e-mail" class="form-control input-lg" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-lg btn-warning pull-right"> Отправить </button>
                     </form>
-                    <h2> Новые фильмы </h2>
-                    <hr />
-                    <div class="row">
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/inter.png" alt="интерстеллар" />
-                            <div class="film_label"> Интерстеллар </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/matrix.png" alt="Матрица" />
-                            <div class="film_label"> Матрица </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/cloud.png" alt="Облачный атлас" />
-                            <div class="film_label"> Облачный атлас </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/max.png" alt="Безумный Макс" />
-                            <div class="film_label"> Безумный Макс </div>
-                        </div>
-                    </div>
-                    @* блок с отступом между строками *@
-                    <div class="margin-8">  </div>
-                    <h2> Новые сериалы </h2>
-                    <hr />
-                    <div class="row">
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/xfiles.png" alt="Секретные материалы" />
-                            <div class="film_label"> Секретные материалы </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/silicon.png" alt="Кремнивая долина" />
-                            <div class="film_label"> Кремнивая долина </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/dead.png" alt="Ходячие мертвецы" />
-                            <div class="film_label"> Ходячие мертвецы </div>
-                        </div>
-                        <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <img src="~/images/breakingbad.png" alt="Во все тяжкие" />
-                            <div class="film_label"> Во все тяжкие </div>
-                        </div>
-                    </div>
-                    @* блок с постами *@
-                    <a href="#"> <h3> Как снимали Интерстеллар </h3> </a>
-                    <hr />
-                    <p> 45 лет исполнилось Кристоферу Нолану — одному из самых успешных режиссеров нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и простыми зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан занял место режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась участия в проекте. </p>
-                    <a href="#" class="btn btn-warning pull-right"> Читать </a>
-                    <div class="margin-8">  </div>
-                    <a href="#"> <h3> Актер Том Хенкс поделился впечатлением о фестивале </h3> </a>
-                    <hr />
-                    <p> 16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской киноакадемии. Леонардо ДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен, Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем репортаже. </p>
-                    <a href="#" class="btn btn-warning pull-right"> Читать </a>
-                    <div class="margin-8"></div>
                 </div>
                 @* левый блок контента *@
                 @* col-lg-pull-9 - меняем блоки местами *@
@@ -219,7 +172,6 @@
                                         <a href="#">Облачный атлас</a>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
                     </div>

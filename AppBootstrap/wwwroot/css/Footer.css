@@ -11,6 +11,7 @@ footer {
     background-color: #222;
     padding: 17px 0 18px 0;
     border-top: 1px solid black;
+    margin-top: 50px;
 }
 /*стили ссылок футера*/
 footer a {

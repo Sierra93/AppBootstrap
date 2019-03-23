@@ -32,5 +32,17 @@ namespace AppBootstrap.Controllers {
         public IActionResult Error() {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        //переходим на главную страницу
+        public ActionResult mainPage() {
+            return View("Index");
+        }
+        //переходим на страницу фильмы
+        public ActionResult filmsShow() {
+            return View("Show");
+        }
+        //переходим на страницу контакты
+        public ActionResult pageContacts() {
+            return View("Contacts");
+        }
     }
 }

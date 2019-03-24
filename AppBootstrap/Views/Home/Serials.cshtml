@@ -47,9 +47,9 @@
                         <ul class="nav nav-pills">
                             <li> @Html.ActionLink("Главная", "mainPage", "Home") </li>
                             <li> @Html.ActionLink("Фильмы", "filmsShow", "Home") </li>
-                            <li> @Html.ActionLink("Сериалы", "pageSerials", "Home") </li>
+                            <li class="active"> @Html.ActionLink("Сериалы", "pageSerials", "Home") </li>
                             <li> @Html.ActionLink("Рейтинг фильмов", "pageRating", "Home") </li>
-                            <li class="active"> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
+                            <li> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
                         </ul>
                     </div>
                 </div>
@@ -63,23 +63,88 @@
                 @* правый блок контента *@
                 @* col-lg-push-3 - меняем блоки местами *@
                 <div class="col-lg-9 col-lg-push-3">
-                    <h2> Контакты </h2>
+                    <h2> Сериалы </h2>
                     <hr />
-                    <p> Отправьте ваш отзыв о портале КиноМонстр </p>
-                    <form>
-                        <div class="form-group">
-                            @* input-lg - делает инпут большим *@
-                            <input type="text" placeholder="Ваше имя" class="form-control input-lg" />
+                    <div class="row">
+                        @* clearfix - убирает обтекание элементов *@
+                        <div class="well clearfix">
+                            @* блок с картинками и текстом *@
+                            <div class="col-lg-3 col-md-2 text-center">
+                                <img class="img-thumbnail" src="~/images/inter.png" alt="Интерстейллар" />
+                                <p> Интерстейллар </p>
+                            </div>
+                            <div class="col-lg-9 col-md-10">
+                                <p>
+                                    Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и ученных отправляется сквозь червоточину (которая
+                                    предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для
+                                    космических путешествий человека и переселить человечество на другую планету.
+                                </p>
+                            </div>
+                            <div class="col=lg-12">
+                                <a href="#" class="btn btn-lg btn-warning pull-right">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            @* input-lg - делает инпут большим *@
-                            <input type="text" placeholder="Ваш e-mail" class="form-control input-lg" />
+                    </div>
+                    <div class="row">
+                        @* clearfix - убирает обтекание элементов *@
+                        <div class="well clearfix">
+                            @* блок с картинками и текстом *@
+                            <div class="col-lg-3 col-md-2 text-center">
+                                <img class="img-thumbnail" src="~/images/matrix.png" alt="Матрица" />
+                                <p> Матрица </p>
+                            </div>
+                            <div class="col-lg-9 col-md-10">
+                                <p>
+                                    Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и ученных отправляется сквозь червоточину (которая
+                                    предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для
+                                    космических путешествий человека и переселить человечество на другую планету.
+                                </p>
+                            </div>
+                            <div class="col=lg-12">
+                                <a href="#" class="btn btn-lg btn-warning pull-right">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="row">
+                        @* clearfix - убирает обтекание элементов *@
+                        <div class="well clearfix">
+                            @* блок с картинками и текстом *@
+                            <div class="col-lg-3 col-md-2 text-center">
+                                <img class="img-thumbnail" src="~/images/cloud.png" alt="Облачный атлас" />
+                                <p> Облачный атлас </p>
+                            </div>
+                            <div class="col-lg-9 col-md-10">
+                                <p>
+                                    Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и ученных отправляется сквозь червоточину (которая
+                                    предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для
+                                    космических путешествий человека и переселить человечество на другую планету.
+                                </p>
+                            </div>
+                            <div class="col=lg-12">
+                                <a href="#" class="btn btn-lg btn-warning pull-right">Подробнее</a>
+                            </div>
                         </div>
-                        <button class="btn btn-lg btn-warning pull-right"> Отправить </button>
-                    </form>
+                    </div>
+                    <div class="row">
+                        @* clearfix - убирает обтекание элементов *@
+                        <div class="well clearfix">
+                            @* блок с картинками и текстом *@
+                            <div class="col-lg-3 col-md-2 text-center">
+                                <img class="img-thumbnail" src="~/images/max.png" alt="Безумный Макс" />
+                                <p> Безумный Макс </p>
+                            </div>
+                            <div class="col-lg-9 col-md-10">
+                                <p>
+                                    Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и ученных отправляется сквозь червоточину (которая
+                                    предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для
+                                    космических путешествий человека и переселить человечество на другую планету.
+                                </p>
+                            </div>
+                            <div class="col=lg-12">
+                                <a href="#" class="btn btn-lg btn-warning pull-right">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 @* левый блок контента *@
                 @* col-lg-pull-9 - меняем блоки местами *@

@@ -74,6 +74,10 @@
 textarea.form-control {
     height: 200px;
 }
+/*стили для таблицы*/
+.table tbody > tr > td.vert-align {
+    vertical-align: middle;
+}
     /*медиа-запрос для вертикально отображения меню при уменьшении экрана и отцентровки логотипа и слогана*/
     @media (max-width: 767px) {
         /*для вертикального размещения меню*/

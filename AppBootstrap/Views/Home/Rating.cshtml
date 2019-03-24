@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Контакты</title>
+    <title>Главная</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/Styles.css" rel="stylesheet" />
@@ -48,8 +48,8 @@
                             <li> @Html.ActionLink("Главная", "mainPage", "Home") </li>
                             <li> @Html.ActionLink("Фильмы", "filmsShow", "Home") </li>
                             <li> @Html.ActionLink("Сериалы", "pageSerials", "Home") </li>
-                            <li> @Html.ActionLink("Рейтинг фильмов", "pageRating", "Home") </li>
-                            <li class="active"> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
+                            <li class="active"> @Html.ActionLink("Рейтинг фильмов", "pageRating", "Home") </li>
+                            <li> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
                         </ul>
                     </div>
                 </div>
@@ -63,23 +63,53 @@
                 @* правый блок контента *@
                 @* col-lg-push-3 - меняем блоки местами *@
                 <div class="col-lg-9 col-lg-push-3">
-                    <h2> Контакты </h2>
-                    <hr />
-                    <p> Отправьте ваш отзыв о портале КиноМонстр </p>
-                    <form>
-                        <div class="form-group">
-                            @* input-lg - делает инпут большим *@
-                            <input type="text" placeholder="Ваше имя" class="form-control input-lg" />
-                        </div>
-                        <div class="form-group">
-                            @* input-lg - делает инпут большим *@
-                            <input type="text" placeholder="Ваш e-mail" class="form-control input-lg" />
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <button class="btn btn-lg btn-warning pull-right"> Отправить </button>
-                    </form>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Фильм</th>
+                                <th class="text-center">Год</th>
+                                <th class="text-center">Рейтинг</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-lg-1 col-md-1 col-xs-2">
+                                    <img class="img-responsive" src="~/images/inter.png" alt="Интерстеллар" />
+                                </td>
+                                <td class="vert-align"><a href="show.html">Интерстеллар</a></td>
+                                <td class="text-center vert-align">2014</td>
+                                <td class="text-center vert-align"><span class="badge">8.1</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-lg-1 col-md-1 col-xs-2">
+                                    <img class="img-responsive" src="~/images/cloud.png" alt="Облачный атлас" />
+                                </td>
+                                <td class="vert-align"><a href="#">Облачный атлас</a></td>
+                                <td class="text-center vert-align">2012</td>
+                                <td class="text-center vert-align"><span class="badge">8.0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-lg-1 col-md-1 col-xs-2">
+                                    <img class="img-responsive" src="~/images/matrix.png" alt="Матрица" />
+                                </td>
+                                <td class="vert-align"><a href="#">Матрица</a></td>
+                                <td class="text-center vert-align">1999</td>
+                                <td class="text-center vert-align"><span class="badge">7.9</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-lg-1 col-md-1 col-xs-2">
+                                    <img class="img-responsive" src="~/images/max.png" alt="Безумный макс" />
+                                </td>
+                                <td class="vert-align"><a href="#">Безумный макс</a></td>
+                                <td class="text-center vert-align">2015</td>
+                                <td class="text-center vert-align"><span class="badge">7.8</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 @* левый блок контента *@
                 @* col-lg-pull-9 - меняем блоки местами *@
@@ -173,6 +203,7 @@
                                         <a href="#">Облачный атлас</a>
                                     </li>
                                 </ul>
+
                             </div>
                         </div>
                     </div>

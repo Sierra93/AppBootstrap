@@ -44,5 +44,13 @@ namespace AppBootstrap.Controllers {
         public ActionResult pageContacts() {
             return View("Contacts");
         }
+        //переходим на страницу сериалы
+        public ActionResult pageSerials() {
+            return View("Serials");
+        }
+        //переходим на страницу рейтинг фильмов
+        public ActionResult pageRating() {
+            return View("Rating");
+        }
     }
 }

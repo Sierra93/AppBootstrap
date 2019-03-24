@@ -47,8 +47,8 @@
                         <ul class="nav nav-pills">
                             <li> @Html.ActionLink("Главная", "mainPage", "Home") </li>
                             <li class="active"> @Html.ActionLink("Фильмы", "filmsShow", "Home") </li>
-                            <li> <a href="#"> Сериалы </a> </li>
-                            <li> <a href="#"> Рейтинг фильмов </a> </li>
+                            <li> @Html.ActionLink("Сериалы", "pageSerials", "Home") </li>
+                            <li> @Html.ActionLink("Рейтинг фильмов", "pageRating", "Home") </li>
                             <li> @Html.ActionLink("Контакты", "pageContacts", "Home") </li>
                         </ul>
                     </div>
